@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Manvi ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    background: linear-gradient(135deg,#ff4e50,#1f1c2c);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    color:white;
+}
+
+.container{
+    text-align:center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1{
+    font-size:3.5rem;
+    font-weight:800;
+    margin-bottom:10px;
+    text-shadow:0 0 20px rgba(255,255,255,0.6);
+}
+
+h2{
+    font-weight:300;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.heart{
+    font-size:4rem;
+    animation:pulse 1.5s infinite;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4e50;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.signature{
+    margin-top:40px;
+    font-size:1.2rem;
+    font-weight:300;
+    opacity:0.9;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="heart">❤️</div>
+    <h1>Manvi, I Love You</h1>
+    <h2>You are my favorite notification.</h2>
+    
+    <button onclick="showMessage()">Click Here</button>
+
+    <div class="signature">
+        Forever yours,<br>
+        <strong>Dev Garg</strong>
+    </div>
+</div>
+
+<script>
+function showMessage(){
+    alert("No matter what happens, I choose you ❤️");
+}
+</script>
+
+</body>
+</html>
